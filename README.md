@@ -24,7 +24,6 @@ So, we can conclude that ECLAT is good in small or medium datasets and in situat
 
 FP Growth means Frequency Pattern Growth, and can be considered a version improve from Apriori as it is faster and more efficient to obtain the same goal. But there is another point, while Apriori needs to scan the database multiple times to check the support count, the FP Growth needs only twice. Furthermore, it uses a different structure known as FP-Tree to store the information.
 The first node represents the “null” and each other node represents an item. As the proposed algorithm is to find the frequent itemsets, this structure (FP-Tree) allows it to be faster than Apriori.
-Look at the image below. The K, E, M, O, and Y are the item. You can imagine them as supermarket items like butter, bread, coffee, rice, and milk. The number in front of them represents the frequency of each item, for example, K appeared in 5 purchases. You can realize that the image below has the dashes arrows, which means that items are linked and appear in other order.
 
 FP Growth Algorithm is the method of finding frequent patterns without candidate generation. It constructs an FP Tree rather than using the generate and test strategy of Apriori. The focus of the FP Growth algorithm is on fragmenting the paths of the items and mining frequent patterns.
 
